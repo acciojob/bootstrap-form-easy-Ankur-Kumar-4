@@ -23,15 +23,23 @@
 				  <div class="col">
 					  <label for="first-name-input" class="form-label">First Name</label>
 				    <input type="text" id="first-name-input" class="form-control"  aria-label="First name" required>
-				
+				<div class="invalid-feedback">
+        Please write first name
+      </div>
 				  </div>
 				  <div class="col">
 					  <label for="last-name-input" class="form-label">Last Name</label>
 				    <input type="text" id="last-name-input" class="form-control"  aria-label="Last name" required>
+				 <div class="invalid-feedback">
+        Please write last name
+      </div>
 				  </div>
 				  <div class="col">
 					   <label for="email-input" class="form-label">Email Address</label>
 				    <input type="email" id="email-input" placeholder="xyz@abc.com" class="form-control"  aria-label="Last name" required>
+				 <div class="invalid-feedback">
+        Please write a username.
+      </div>
 				  </div>
 				</div>
 <br>
@@ -42,7 +50,9 @@
 				<div class="col-6">
 					  <label for="college-input" class="form-label">College</label>
 				    <input type="text" id="college-input" class="form-control"  aria-label="Last name" required>
-				
+				<div class="invalid-feedback">
+       Please provide a valid college
+      </div>
 				</div>
 				<div class="col-3">
 			 <label for="grad-year-select" class="form-label">Graduation Year</label>
@@ -53,17 +63,25 @@
 				  <option value="3">2022</option>
 				  <option value="3">2023</option>
 				</select>
-					
+					<div class="invalid-feedback">
+      Please select a valid year.
+      </div>
 				</div>
 				<div class="col-3">
 					<label for="roll-no-input" class="form-label">Roll No.</label>
 				<input type="text" id="roll-no-input" class="form-control"  aria-label="Last name" required>
+				<div class="invalid-feedback">
+      Please write a valid roll no.
+      </div>
 				</div> 
 			</div>
 <br>
 			<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="conditions-checkbox" required>
-  <label class="form-check-label" for="conditions-checkbox">
+  <div class="invalid-feedback">
+    You must agree before submitting.
+      </div>
+				<label class="form-check-label" for="conditions-checkbox">
     Agree to terms and conditions
   </label>
 </div>
